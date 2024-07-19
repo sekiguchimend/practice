@@ -1,0 +1,131 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+header{
+    display: flex;
+}
+header h1{
+    margin-left: 20px;
+    color:rgb(66, 66, 209);
+}
+ header nav > li{
+    list-style: none;
+}
+ header nav{
+    display: flex;
+    position: absolute;
+    right: 100px;
+    margin-top: 30px;
+}
+li a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: rgb(99, 99, 99);
+    font-weight: bold;
+}
+header img{
+    position:absolute;
+    right: 10px;
+    margin-top: 10px;
+}
+.image{
+    position: relative;
+}
+.image h1{
+    position: absolute;
+    left: 50px;
+    top: 30%;
+    color: white;
+    font-family: serif;
+    font-size: 100px;
+}
+.image p{
+    position: absolute;
+    left: 10%;
+    top: 55%;
+    color: white;
+    font-family: serif;
+}
+.image img{
+    width: 100%;
+    height: 100vh;
+} 
+.box{
+   background-color: rgb(91, 119, 203);
+   padding: 15px;
+   margin-top: 70px;
+   width: 40%;
+   left: 30%;
+   position: absolute;
+   border-radius: 40px 0 40px 0;
+
+}
+.box p{
+   text-align: center;
+   color: rgb(63, 63, 63);
+   font-size: 20px;
+}
+h2{
+    margin-top: 270px;
+    text-align: center;
+    font-size: 4em;
+    color: rgb(110, 110, 110);
+}
+hr{
+    width: 50%;
+    text-align: center;
+    color: rgb(189, 189, 189);
+}
+section{
+    display: flex;
+    margin-top: 70px;
+
+}
+.description{
+    margin-left: 100px;
+}
+ .description > h3{
+    font-size: 2em;
+    font-weight:lighter;
+}
+.p1{
+    font-size: 3em;
+}
+.p2{
+    font-size: 1em;
+    color: rgb(131, 130, 130);
+}
+section > img{
+    border-radius: 70px;
+    margin-left: 70px;
+}
+.back{
+    background-color: rgb(242, 242, 242);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    width: calc(100% * 4); /* 画像の数に応じて調整 */
+    animation: slide 20s linear infinite;
+}
+
+.slides img {
+    width: auto; /* 100% / 画像の数 */
+    height: auto; /* アスペクト比を維持 */
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* -(100% - 100%/画像数) */
+    }
+}
